@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('---clean---') {
             steps {
+                sh "cd /home/ubuntu/mvn_workspace/my-app/my-app"
                 sh "mvn clean"
             }
         }
